@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Clients</title>
+</head>
+<body>
+    <h1>Liste des Clients</h1>
+    <ul>
+        {% for client in clients %}
+            <li>{{ client.name }} - {{ client.ip }} - {{ client.mac }} - {{ client.longitude }} - {{ client.latitude }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
